@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  username: string = 'Joaquim';
+
+  // Compartilhando objeto de pai para filho
+  userData = {
+    email: 'joaquim@gmail.com',
+    role: 'admin',
+  }
+
+  profissoes = [
+    'design', 'programador', 'administrador'
+  ]
+
   title = 'curso-angular';
 }
