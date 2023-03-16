@@ -1,0 +1,8 @@
+{
+  "times": [
+    {"name" : "São Paulo", "id" : "1"},
+    {"name" : "Palmeiras", "id" : "2"},
+    {"name" : "Santos", "id" : "3"},
+    {"name" : "Corinthians", "id" : "4"}
+  ]
+}

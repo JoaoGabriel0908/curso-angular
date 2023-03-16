@@ -1,0 +1,12 @@
+<div>
+  <h2>Animais</h2>
+  <ul>
+    <li *ngFor="let animal of animals">
+      Nome: <a routerLink="/list/{{animal.id}}">{{animal.name}}</a> - Tipo: {{animal.type}}
+      <!-- Criando uma função no click do botão passando o objeto animal -->
+      <button (click)="showAge(animal)">Mostra a idade</button>
+      <button (click)="removeAnimal(animal)">Excluir animal</button>
+    </li>
+    <p>{{animalDetails}}</p>
+  </ul>
+</div>

@@ -1,7 +1,23 @@
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/list">List</a>
+  <a routerLink="/appParent">appParent</a>
+  <a routerLink="/appDirectives">AppFirst</a>
+  <a routerLink="/appIfRender">AppIfRender</a>
+  <a routerLink="/two">Two</a>
+</nav>
+
 <h1>Hello World!</h1>
 <p>Alguma coisa</p>
-<app-first-component [profissao]="profissoes"></app-first-component>
+<!-- <app-first-component [profissao]="profissoes"></app-first-component>
 <app-parent-data [name]="username" [userData]="userData"></app-parent-data>
 <div><a href="#">Clique aqui</a></div>
 <app-directives></app-directives>
 <app-if-render></app-if-render>
+<app-events></app-events>
+<app-emitter></app-emitter>
+<app-list-render></app-list-render>
+<app-pipes></app-pipes>
+<app-two-way-bindings></app-two-way-bindings>
+<app-list-render></app-list-render> -->
+<router-outlet></router-outlet>

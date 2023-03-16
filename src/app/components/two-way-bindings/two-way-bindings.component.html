@@ -1,0 +1,14 @@
+<div class="class">
+  <h2>Two way data binding</h2>
+  <form>
+    <!--  -->
+    <input type="text" [(ngModel)]="name" name="input" placeholder="Digite seu nome: ">
+    <input type="submit" value="Enviar">
+  </form>
+  <ul>
+    <li *ngFor="let tim of times">
+      Time: {{tim.name}}
+    </li>
+  </ul>
+  <p>O nome é {{name}}</p>
+</div>
